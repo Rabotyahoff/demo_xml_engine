@@ -1,0 +1,16 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteBase /
+RewriteRule ^.htaccess$ - [F]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule	^(.*)$		index.php?page=$1 [L,QSA]
+#RewriteRule	^themes/(.*)$	themes/$1
+#RewriteRule	^res/(.*)$	res/$1
+#RewriteRule	^_xml_engine/(.*)$	_xml_engine/$1
+
+<Files "_*.xml">
+  deny from all
+</Files>

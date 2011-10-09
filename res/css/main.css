@@ -1,0 +1,367 @@
+@CHARSET "UTF-8";
+.gray{
+	color: gray !important;
+}
+
+.green{
+	color:green !important;
+}
+
+.noline{
+	text-decoration: none;
+}
+
+span.highlight{
+	background-color: yellow;
+}
+
+.armed{
+	background:url(/res/img/tk/weapon_24_16.png) repeat-y left top;
+	padding-left:26px; 
+}
+
+.msg_warning{
+  top: 0px;
+  position: fixed;
+  left:50%;
+  padding: 5px;
+  max-height: 98px;
+  z-index:500;
+	font-size: 12px;
+	background-color: #FFD282;
+  
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.msg_info{
+  top: 0px;
+  position: fixed;
+  left:50%;
+  padding: 5px;
+  max-height: 98px;
+  z-index:500;
+	font-size: 12px;
+  background-color: #B7E5B2;
+  
+  -webkit-border-bottom-right-radius: 6px;
+  -webkit-border-bottom-left-radius: 6px;
+  -moz-border-radius-bottomright: 6px;
+  -moz-border-radius-bottomleft: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+div.blocked{
+	opacity:0.5;
+	filter: alpha(opacity=50);	
+}
+div.blocked:hover{
+	opacity:0.7;
+	filter: alpha(opacity=70);	
+}
+
+/*Begin user_info*/
+div.user_info{
+	border: #E9EAEC 1px solid;
+	background-color: white;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+
+div.user_info:hover{
+	background-color: #FAFAFF;
+}
+
+div.user_info .pic{
+	float: left;
+	padding-left:5px;
+}
+
+div.user_info .info{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	padding-left:5px;
+	width: 38%;
+}
+
+div.user_info .info2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 35%;
+}
+
+div.user_info .icons{
+	margin-top: 10px;
+	float: right;
+	padding-right:5px;
+}
+/*End user_info*/
+
+/*Begin location_info*/
+div.location_info{
+	border: #E9EAEC 1px solid;
+	background-color: white;
+	margin-bottom:10px;
+	cursor: pointer;
+}
+
+div.location_info:hover{
+	background-color: #FAFAFF;
+}
+
+div.location_info .info{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	padding-left:10px;
+	width: 45%;
+}
+
+div.location_info .info2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 45%;
+}
+
+div.location_info .icons{
+	margin-top: 10px;
+	float: right;
+	padding-right:5px;
+}
+
+div.footer_info{
+	margin-bottom: 10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+div.location_top_info{
+	margin-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+div.footer_info a img{
+	vertical-align: middle; 
+	padding-right: 5px;	
+}
+/*End location_info*/
+
+
+img.btn{
+	cursor: pointer;
+	vertical-align:middle;
+}
+
+span.lnk, img.lnk{
+	cursor: pointer;
+}
+	
+.form legend img {
+	vertical-align: middle;
+}
+
+.empty_field{
+	background-color: #FFF0FF !important;
+}
+
+div.pic{
+	float:left;
+	padding-top:10px;	
+	padding-bottom:10px;	
+}
+
+.hide{
+	display: none;
+}
+
+.green{
+	color: #2AC027;
+}
+
+div.user_info_small{
+	border:1px solid #DCDCDC;
+	float:left;
+	margin:5px;
+	padding:5px;
+	width:205px;
+	height: 85px;
+	cursor: pointer;
+	overflow:hidden;
+}
+div.user_info_small div.pic{
+	height: 65px;
+	padding-right:5px;
+	padding-top:0px;
+}
+div.user_info_small div.pic img{
+	padding-top:5px;
+}
+div.user_info_checked, div.user_info_small:hover{
+  background-color:#FAFAFF;
+}
+div.user_info_small div a{
+	color: #2A5A8A;
+	font-weight: bold;
+}
+
+input.qsearch{
+	border:1px solid #C8C8C8;
+	font-family:verdana,arial,sans-serif;
+	font-size:12px;
+	padding:0.2em 0;
+	width:205px;	
+}
+
+div input.qsearch, div input.qbutton{
+	float:right; 
+	margin-right:10px;
+}
+
+input.qbutton{
+	background:none repeat scroll 0 0 #E6E6E6;
+	border:1px solid #969696;
+	color:#969696;
+	font-family:verdana,arial,sans-serif;
+	font-size:12px;
+	text-align:center;
+	width:3em;	
+	padding:0.2em 0 0;	
+}
+
+/*Begin shift*/
+div.days{
+	border: #E9EAEC 1px solid;
+	background-color: white;
+	margin-bottom:10px;
+}
+
+div.days:hover{
+	background-color: #FAFAFF;
+}
+
+div.days div.day_title{
+	padding:10px;
+	background-color: #F0F0FF;
+	font-weight:bold;
+}
+
+div.days div.day_shift{
+	margin-left:10px;
+	margin-right:10px;
+	border-bottom:1px solid #DCDCDC;
+	margin-bottom:20px;
+}
+
+div.day_shift div.shift_time{
+	float:left;
+	width:30%;
+}
+div.day_shift div.shift_securities{
+	float:left;
+	width:65%;
+}
+div.day_shift div.shift_edit{
+	float:right;
+	width:5%;
+	padding-top:12px;
+	text-align:center;	
+}
+div.day_shift input.field{
+	width:90px !important;
+}
+div.day_shift label.left{
+	width:50px !important;
+}
+div.shift_time fieldset{
+	border-bottom:0px;
+	margin-bottom:0px;
+}
+div.shift_securities fieldset{
+	border-bottom:0px;
+	margin-left:-1px;
+	margin-bottom:0px;
+}
+/*End shift*/
+
+/*Begin hours*/
+div.hours_shift{
+	border:1px solid #DCDCDC;
+	margin:10px 10px 10px 0;
+	padding:10px;
+}
+div.hours_shift:hover{
+	background-color:#FAFAFF;
+}
+div.hours_shift div.left{
+	float:left;
+	width:525px;	
+}
+div.hours_shift div.right{
+	float:left;
+	text-align:right;
+	width:70px;
+	padding-top:10px;
+}
+
+div.hours_shift div.top_info{
+	float:left;
+	width:100px;	
+}
+div.hours_shift div.top_info label.day, 
+div.hours_shift div.top_info label.date,
+div.hours_shift div.top_info label.time, 
+div.hours_shift div.top_info label.hours{
+	display:block;
+}
+
+div.hours_shift div.top_info label.date{
+	font-weight:bold;
+}
+
+div.hours_shift div.securities{
+	padding-left:10px;
+	float:left;
+}
+
+div.hours_shift div.bottom_info{
+	padding-top:7px;
+}
+
+div.added_hours{
+	background-color: #FFFAFA;
+}
+
+div.period{
+	padding-bottom:10px;
+}
+
+div.period img{
+	cursor:pointer;
+	vertical-align: middle;
+}
+
+table.security_over_pays{
+	width: 595px !important;
+}
+/*End hours*/
+
+/*Begin comments*/
+fieldset.big_textarea textarea{
+	width:615px;
+}
+/*End comments*/
+
+/*Begin invoices*/
+div.changed_hours{
+  background-color: #FFFAFA;
+}
+/*End invoices*/
+

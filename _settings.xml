@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>	
+	<!-- local -->
+	<site>
+		<name>Rabotyahoff</name>
+		<root_url>http://rabotyahoff.my/</root_url>
+		<version>1.0</version>
+		<date>2011.02.11</date>
+	</site>
+	
+	<engine>
+		<root_url>http://_xml_engine1.my/</root_url>		
+	</engine>	
+	
+	<cache_time>0</cache_time>
+	
+	<databases>
+		<!--<item id="main">
+			<host>localhost</host>
+			<name>timekeeper2</name>
+			<user>root</user>
+			<password></password>
+		</item>-->		
+	</databases>
+	
+	<emails>
+		<admin>rabotyahoff@gmail.com</admin>
+	</emails>
+	
+	<formats>
+		<date>m/d/Y</date>
+		<date_sql>%m/%d/%Y</date_sql>
+		<time>h:i A</time>
+		<time_sql>%h:%i %p</time_sql>
+	</formats>	
+</settings>

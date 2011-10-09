@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<!--
+		Ситемные права
+		root - права не проверяется. Имеет доступ везде
+		admin - администратор
+		_unloggined_- только для незалогиненых юзеров - НЕ описывается в rights
+		
+		Права можно указать для любой ноды в аттрибуте rights через запятую
+		rights="admin, user, _unloggined_"
+		Если права не указаны, значит доступна всем
+		Если указаны пустые права rights="", то нода доступна всем залогиненым юзерам
+		Права root можно не указывать
+	-->
+	<rights>
+		<item>root</item>		
+	</rights>
+	
+	<pages>
+		<!-- если rights для страницы не указаны, то контроля прав нет. 
+		Если rights пуст, то доступ всем залогиненым пользователям -->
+		
+		<item screen="404">
+			<!-- системный экран -->
+			<title>404</title>
+			<theme>404</theme>
+			<handlers>
+				<content>p_404</content>
+			</handlers>
+		</item>		
+	
+		<!-- может быть несколько экранов с одинаковым screen, но разными правами -->
+		
+		<!-- Begin для не залогиненых юзеров -->
+		<item screen="">
+			<!-- можно задать редирект на любой путь -->
+			<!--<redirect>/somescreen1/somescreen2</redirect>-->
+			<title>Rabotyahoff</title>
+			<description></description>
+			<keywords></keywords>
+			<theme>index/main</theme>
+			<!-- Обработчики. В общем может и не быть -->
+			<handlers>
+				<!-- Главный обработчик -->
+				<!-- В обработчиках можно указывать путь -->
+				<content xsl="main">h_static</content>
+				<!--<header xsl="header_big">h_static</header>
+				<footer xsl="footer">h_static</footer>-->
+			</handlers>
+		</item>
+	</pages>
+
+</site>
