@@ -23,7 +23,7 @@
 		<item screen="404">
 			<!-- системный экран -->
 			<title>404</title>
-			<theme>404</theme>
+			<theme>404.xsl</theme>
 			<handlers>
 				<content>p_404</content>
 			</handlers>
@@ -38,14 +38,14 @@
 			<title>Rabotyahoff</title>
 			<description></description>
 			<keywords></keywords>
-			<theme>index/main</theme>
+			<theme>index/main.xsl</theme>
 			<!-- Обработчики. В общем может и не быть -->
 			<handlers>
 				<!-- Главный обработчик -->
 				<!-- В обработчиках можно указывать путь -->
-				<content xsl="main">h_static</content>
-				<!--<header xsl="header_big">h_static</header>
-				<footer xsl="footer">h_static</footer>-->
+				<content xsl="main.xsl">h_static</content>
+				<!--<header xsl="header_big.xsl">h_static</header>
+				<footer xsl="footer.xsl">h_static</footer>-->
 			</handlers>
 		</item>
 	</pages>
